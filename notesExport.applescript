@@ -36,14 +36,16 @@ tell application "Notes"
 
 " & "Exactly " & (count of notes) & " notes are stored in the application. " & "Each one of them will be exported as a simple HTML file stored in a folder of your choice." with title "Notes Export" buttons {"Cancel", "Proceed"} cancel button "Cancel" default button "Proceed"
 	set exportFolder to choose folder
-	
+	set counter to 0
+
 	repeat with each in every note
 		set noteName to name of each
 		set noteBody to body of each
 		set noteTitle to my buildTitle(noteName)
-		set filename to ((exportFolder as string) & noteTitle & ".html")
+		set counter to counter + 1
+		set filename to ((exportFolder as string) & counter & ". " & noteTitle & ".html")
 		my writeToFile(filename, noteBody as text)
 	end repeat
-	
+
 	display alert "Notes Export" message "All notes were exported successfully." as informational
 end tell
