@@ -2,9 +2,11 @@
 
 ## Summary
 
-Apple's [OS X Mountain Lion](http://www.apple.com/osx/) introduces [Notes.app](http://www.apple.com/osx/whats-new/features.html#notes) — a simple and convenient note-taking application.
+Apple's [OS X Mountain Lion](http://www.apple.com/osx/) introduced [Notes.app](http://www.apple.com/osx/whats-new/features.html#notes) — a simple and convenient note-taking application.
 
 **Notes Export** is a small utility for exporting notes stored in Notes.app to plain HTML files. It exports all of your notes at once, quickly and effortlessly, to a folder of your choice.
+
+This app is compatible with OS X Mavericks.
 
 ## Download
 
